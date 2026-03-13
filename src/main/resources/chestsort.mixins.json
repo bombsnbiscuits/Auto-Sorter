@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.autosort.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AutoSortScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

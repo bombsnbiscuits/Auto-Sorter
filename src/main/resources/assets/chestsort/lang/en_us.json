@@ -1,0 +1,10 @@
+{
+  "category.chestsort": "Chest Auto Sorter",
+  "key.chestsort.sort_all": "Sort All Chests",
+  "key.chestsort.deselect": "Deselect Chest",
+  "key.chestsort.highlight": "Toggle Chest Highlights",
+  "key.chestsort.organize": "Organize Chests",
+  "key.chestsort.deposit": "Deposit All",
+  "key.chestsort.menu": "Cycle Category / Menu",
+  "key.chestsort.assign": "Assign Category to Chest"
+}
