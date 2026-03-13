@@ -248,6 +248,14 @@ public class DepositRunManager {
         if (player == null || client.interactionManager == null) return;
 
         BlockPos target = targetChests.get(currentIndex);
+
+        // Double-check before opening — inventory may have synced since we started walking
+        if (!playerHasItemsForChest(client, target)) {
+            phase = Phase.NEXT_CHEST;
+            tickCooldown = 2;
+            return;
+        }
+
         Vec3d center = Vec3d.ofCenter(target);
         double dist = new Vec3d(player.getX(), player.getY(), player.getZ()).distanceTo(center);
         if (dist > INTERACT_RANGE) { phase = Phase.WALKING; return; }
