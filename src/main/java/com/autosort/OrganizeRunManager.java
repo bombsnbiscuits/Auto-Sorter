@@ -42,10 +42,10 @@ public class OrganizeRunManager {
     }
 
     private static final double INTERACT_RANGE = 4.5;
-    private static final int INTERACT_DELAY = 5;
+    private static final int INTERACT_DELAY = 2;
     private static final int SCREEN_WAIT_TIMEOUT = 60;
-    private static final int CLOSE_DELAY = 5;
-    private static final int BETWEEN_DELAY = 10;
+    private static final int CLOSE_DELAY = 2;
+    private static final int BETWEEN_DELAY = 3;
     private static final double WALK_SPEED = 0.23;
     private static final double ARRIVAL_THRESHOLD = 2.8;
     private static final int CLICK_COOLDOWN = 5;
@@ -300,7 +300,7 @@ public class OrganizeRunManager {
         waitTicks = 0;
     }
 
-    private static final int SLOT_SYNC_DELAY = 5; // ticks to wait for server to send item data
+    private static final int SLOT_SYNC_DELAY = 2; // ticks to wait for server to send item data
     private int syncWaitTicks;
 
     private void waitForScreen(MinecraftClient client, Phase successPhase, Phase failPhase) {
